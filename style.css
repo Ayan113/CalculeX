@@ -1,18 +1,17 @@
-#calculator{
-    font-family:'Arial', sans-serif;
-    background-color:hsl(0,0%,15%);
-    border-radius:15px;
-    max-width: 500px;
-    overflow:hidden;
-}
 body{
     display:flex;
-    margin:0;
     justify-content:center;
     align-items:center;
+    margin:0;
     height:100vh;
 
-
+}
+#calculator{
+    font-family:"Arial",sans-serif;
+    background-color:hsl(0,0%,50%);
+    border-radius:15px;
+    max-width:500px;
+    overflow:hidden;
 }
 #display{
     width:100%;
@@ -20,11 +19,12 @@ body{
     font-size:3rem;
     text-align:left;
     border:none;
-    background-color:hsl(0, 0%, 20%);
+    background-color:hsl(0,0%,20%);
     color:white;
 
 
 }
+
 #keys{
     display:grid;
     grid-template-columns:repeat(4,1fr);
@@ -32,29 +32,36 @@ body{
     padding:25px;
 
 }
+.calc{
+    background-color:hsl(130, 77%, 46%);
+
+}
+.calc:hover{
+    background-color:hsl(130, 77%, 56%);
+
+}
+.calc:active{
+    background-color:hsl(130,77%,63%);
+}
 button{
     width:100px;
     height:100px;
     border-radius:50%;
-    border:none;
-    background-color:hsl(0, 0%, 30%);
     color:white;
+    margin:none;
     font-size:3rem;
     font-weight:bold;
-    cursor:pointer;
+    cursor:pointer; 
+
 }
-button:hover{
-    background-color:hsl(0,0%,40%);
-}
-button:active{
-    background-color:hsl(0,0%,50%);
-}
-.operator-btn {
-    background-color: hsl(39,100%,55%);
+
+.operator-btn{  
+    background-color:hsl(130, 91%, 78%);
+
 }
 .operator-btn:hover{
-    background-color:hsl(39,100%,60%);
+    background-color:hsl(130, 91%, 85%);
 }
 .operator-btn:active{
-    background-color:hsl(39,100%,65%);
+    background-color:hsl(130, 91%, 90%);
 }
